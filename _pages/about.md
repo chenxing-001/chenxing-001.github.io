@@ -30,14 +30,17 @@ latest_posts:
 
 - 🎓 就读于安徽工业大学微电子科学与工程专业
 - 💻 擅长 Python、C语言
-- 🌱 正在学习深度学习和前端工程化
+- 🌱 正在学习深度学习、大模型与多智能体系统
 - 📝 喜欢记录技术学习过程中的思考
+- 🐟 热衷于AI与硬件的深度结合
 
 ## 技能
 
 - 前端开发：HTML / CSS / JavaScript / React
 - 后端开发：Python / Node.js
 - 工具：Git / Docker / VS Code
+- 硬件能力：STM32开发、Verilog开发
+- 科研追求：致力于读博，正在提升自己的**_Research Taste_**
 
 欢迎浏览我的[项目](/projects/)和[博客](/blog/)！
 
