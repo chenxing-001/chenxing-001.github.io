@@ -1,6 +1,6 @@
 ---
-layout: about
-title: about
+layout: Home
+title: Home
 permalink: /
 subtitle: 微电子科学与工程在读 | 热爱计算机视觉与大模型
 
