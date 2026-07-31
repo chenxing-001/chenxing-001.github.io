@@ -38,8 +38,8 @@ latest_posts:
 
 - 前端开发：HTML / CSS / JavaScript / React
 - 后端开发：Python / Node.js
-- 工具：Git / Docker / VS Code
-- 硬件能力：STM32开发、Verilog开发
+- 科研工具：**_Git_** / **_VS Code_** / **_GPT_** / **_KIMI_** 
+- 硬件能力：**_STM32_**开发、 **_Verilog_**开发
 - 科研追求：致力于读博，正在提升自己的**_Research Taste_**
 
 欢迎浏览我的[项目](/projects/)和[博客](/blog/)！
