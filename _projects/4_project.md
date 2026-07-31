@@ -2,7 +2,7 @@
 layout: page
 title: 多模态情感计算
 description: 正在迭代中，敬请期待...
-img:
+img: assets/img/project4.png
 importance: 3
 category: fun
 ---
