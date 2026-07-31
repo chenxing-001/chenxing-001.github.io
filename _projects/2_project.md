@@ -1,81 +1,27 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: 拓扑时序增强型仿生视觉实时处理系统
+description: 基于深度学习的强暗光环境下的视觉感知，单帧推理延迟可达40.81 ms，SSIM达到0.48。
+img: assets/img/project1.jpg    # ← 项目封面图，没有就删掉这行
+importance: 2                   # ← 数字越小越靠前
+category: work                  # ← 分类：work（工作）或 fun（兴趣）
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## 项目背景
+<!--这里写项目的详细介绍，可以分段、加图片、放代码。-->
+针对自动驾驶及智能视觉感知任务中，强暗光变化环境导致传统视觉模型难以稳定理解目标空间关系，本项目提出了一种基于时序拓扑关系推理的3D目标感知方法。该方法结合生物启发视觉前端、动态注意力机制及时序拓扑建模，通过挖掘连续视觉帧中的目标空间关系，在KITTI数据集中，实现了单帧推理延迟40.81 ms，SSIM达到0.48，相较基础模型显著提升视觉结构保持能力，为复杂光照环境下的鲁棒视觉感知提供有效方案。
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## 我的工作
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+本人作为项目主要负责人，负责生物启发视觉感知模型（BioAttention）的构建与验证，基于KITTI数据集，将灰度图像缩放至48×160像素，并转换为B×1×48×160的四维张量输入CNN模型，并结合NumPy和scikit-image，设置初始学习率1×10⁻⁴，迭代30轮完成训练，实现Latency、FPS、TC、SSIM、Focus等指标计算，完成训练并完成四组消融实验与模型性能分析。
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## 技术栈
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- Python
+- PyTorch
+- TDA
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## 项目成果
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+系统性学习了计算机视觉、自动驾驶前端视觉感知的领域知识，以及相关代码。
