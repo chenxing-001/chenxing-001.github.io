@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: 多模态情感计算
+description: 正在迭代中，敬请期待...
 img:
 importance: 3
 category: fun
