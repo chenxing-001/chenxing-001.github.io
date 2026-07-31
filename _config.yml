@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: 星
+first_name: Xing
 middle_name: 
-last_name: 陈
+last_name: Chen
 contact_note: >
   欢迎通过邮件与我交流技术问题或合作机会。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
