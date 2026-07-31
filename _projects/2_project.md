@@ -2,8 +2,8 @@
 layout: page
 title: 拓扑时序增强型仿生视觉实时处理系统
 description: 基于深度学习的强暗光环境下的视觉感知，单帧推理延迟可达40.81 ms，SSIM达到0.48。
-img: assets/img/project1.jpg    # ← 项目封面图，没有就删掉这行
-importance: 2                   # ← 数字越小越靠前
+img: assets/img/project2.jpg    # ← 项目封面图，没有就删掉这行
+importance: 1                   # ← 数字越小越靠前
 category: work                  # ← 分类：work（工作）或 fun（兴趣）
 related_publications: false
 ---
