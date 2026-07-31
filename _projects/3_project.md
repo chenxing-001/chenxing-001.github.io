@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
+title: 大模型与多智能体系统
+description: 正在迭代中，敬请期待...
+img: assets/img/project3.png
 redirect: https://www.wikipedia.org/
 importance: 3
 category: work
