@@ -7,7 +7,7 @@ subtitle: 微电子科学与工程在读 | 热爱计算机视觉与大模型
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>📧 chenxing_ahut@163.com</p>
     <p>📍 安徽马鞍山</p>
