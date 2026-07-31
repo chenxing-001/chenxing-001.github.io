@@ -1,81 +1,29 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
-importance: 1
-category: work
-related_publications: true
+title: 拓扑增强的ECG心律失常五分类识别研究
+description: 基于深度学习的ECG心律失常五分类识别研究，准确率达到81.66%
+img: assets/img/project1.jpg    # ← 项目封面图，没有就删掉这行
+importance: 1                   # ← 数字越小越靠前
+category: work                  # ← 分类：work（工作）或 fun（兴趣）
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## 项目背景
+<!--这里写项目的详细介绍，可以分段、加图片、放代码。-->
+针对心电信号自动分类任务中，传统方法主要依赖时域、频域等浅层信息，难以充分挖掘心律变化中非线性结构特征的问题，本项目基于Challenge 2015心电数据集，引入拓扑数据分析TDA方法，对ECG时序信号进行高维结构表征，提取内在拓扑特征，结合CNN-LSTM模型完成五类心律状态自动分类。
+该模型可对心脏停搏、严重心动过缓、严重心动过速、室性心动过速、室扑/室颤等5种心律进行分类，在10折交叉验证后，测试集准确率达到**81.66%**，较常规CNN模型**提升了33.01%**，为后续构建更复杂的心律识别模型奠定了基础。
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## 我的工作
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+本人作为第一负责人，负责ECG数据处理、拓扑特征提取、模型构建以及实验评估等核心工作。具体完成了数据预处理，引入TDA方法，将ECG一维时间序列映射至高维空间，利用持续同调等方法提取PI图作为模型输入信号。
+最终实验结果表明，引入拓扑特征后模型在五分类任务中具有更好的识别能力，尤其在复杂异常心律类别上的分类性能得到提升。
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## 技术栈
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- Python
+- PyTorch
+- TDA
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## 项目成果
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+系统性学习了AI for ECG的领域知识，以及相关代码。
